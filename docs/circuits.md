@@ -21,6 +21,12 @@ The constructor checks a small noiseless sample and records a SHA-256 hash of
 the canonical Stim circuit text. This is an implementation check, not a code-
 distance computation or a statistical performance estimate.
 
+Canonical reference hashes for both memory bases of the three highlighted codes
+are supplied in [`circuit_references.json`](../src/armillary/data/circuit_references.json).
+They use four noisy rounds and `p = 0.001`. A circuit hash is computed from
+`str(circuit).encode("utf-8")`; file checksums are recorded separately because
+the saved `.stim` file includes a final newline.
+
 ## Detector-error representation
 
 Stim converts the circuit to a detector error model without graphlike

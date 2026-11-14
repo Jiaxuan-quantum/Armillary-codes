@@ -1,0 +1,65 @@
+{
+  "schema": "armillary.circuit_references.v1",
+  "references": [
+    {
+      "candidate_id": "P-2b28b13c8749",
+      "basis": "x",
+      "p": 0.001,
+      "rounds": 4,
+      "matrix_sha256": "2b28b13c874964ed08fd424ac80e36db104499f02a9395e8807669777494ab3e",
+      "circuit_sha256": "caba2240d6f6d58dee71ebf6090fad7c0c6d1db5b510e8e33d7536bb7407bca5",
+      "detector_count": 6363,
+      "fault_variables": 80901
+    },
+    {
+      "candidate_id": "P-2b28b13c8749",
+      "basis": "z",
+      "p": 0.001,
+      "rounds": 4,
+      "matrix_sha256": "2b28b13c874964ed08fd424ac80e36db104499f02a9395e8807669777494ab3e",
+      "circuit_sha256": "dae3d751a856cc8d913f11a9398320ce80710edc917941b330bde2c7a0728bcf",
+      "detector_count": 6363,
+      "fault_variables": 80901
+    },
+    {
+      "candidate_id": "P-54f8f55d9053",
+      "basis": "x",
+      "p": 0.001,
+      "rounds": 4,
+      "matrix_sha256": "54f8f55d90539b64f46a0a5201b5dba0d7e9088cdc5319dbf721c91b15300ff6",
+      "circuit_sha256": "0e7a74d94a6c4de16cf5dfd1726fc00a9a58821f42c43dc270803eb86423b8d8",
+      "detector_count": 8631,
+      "fault_variables": 109737
+    },
+    {
+      "candidate_id": "P-54f8f55d9053",
+      "basis": "z",
+      "p": 0.001,
+      "rounds": 4,
+      "matrix_sha256": "54f8f55d90539b64f46a0a5201b5dba0d7e9088cdc5319dbf721c91b15300ff6",
+      "circuit_sha256": "5716fa897aad0e6b067e789076711cecfef3f9a638219b9e89c9de405d71ec42",
+      "detector_count": 8631,
+      "fault_variables": 109737
+    },
+    {
+      "candidate_id": "P-0bc3b705dfd0",
+      "basis": "x",
+      "p": 0.001,
+      "rounds": 4,
+      "matrix_sha256": "0bc3b705dfd0c35cea47e1591471e95d92637868af505645216cd7fbd5da0cdc",
+      "circuit_sha256": "065faa50c2394528564210b2ab21bfc5f2b51c05f55435aa0c7aed713eed9fb2",
+      "detector_count": 15204,
+      "fault_variables": 193308
+    },
+    {
+      "candidate_id": "P-0bc3b705dfd0",
+      "basis": "z",
+      "p": 0.001,
+      "rounds": 4,
+      "matrix_sha256": "0bc3b705dfd0c35cea47e1591471e95d92637868af505645216cd7fbd5da0cdc",
+      "circuit_sha256": "a0e8fd6a1c19628485226ea7bc7438d166bc93319690866549ab2b6706c76610",
+      "detector_count": 15204,
+      "fault_variables": 193308
+    }
+  ]
+}
