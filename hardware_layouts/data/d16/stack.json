@@ -1,0 +1,29 @@
+{
+  "tier_faces": [
+    [
+      1
+    ],
+    [
+      7,
+      0
+    ],
+    [
+      8,
+      10
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      5,
+      4
+    ],
+    [
+      2,
+      9
+    ]
+  ],
+  "number_of_partitions": 10395,
+  "scope": "Exhaustive stacking at fixed face assignments. Path and face search is heuristic."
+}

@@ -2,7 +2,7 @@
 
 Reproducible definitions, circuit-level memory experiments, and reference decoders for **rate-1/2 quantum LDPC codes for multi-tier superconducting hardware**.
 
-This repository accompanies the Armillary-code study. It contains a compact catalog of **122 candidates**, a physical-site CXSWAP circuit builder, short-to-long Relay-BP decoding, and a most-likely-error (MLE) decoder. The three representative codes are:
+This repository accompanies the Armillary-code study. It contains a compact catalog of **122 candidates**, a physical-site CXSWAP circuit builder, short-to-long Relay-BP decoding, a most-likely-error (MLE) decoder, and independently reproducible hardware layouts for the three representative codes. The three representative codes are:
 
 | Identifier | Code parameters `[[n, k, d]]` | Catalog identifier |
 |---|---|---|
@@ -102,6 +102,30 @@ python examples/plot_benchmark.py --out results/benchmark.pdf
 
 Install `pip install -e ".[plot]"` for the plotting example. The benchmark command recalculates the reported estimates from packaged counts; it does not rerun the sampling campaign. This release reproduces the code definitions and reference workflow, rather than every numerical decision in the original computation.
 
+## Hardware layouts
+
+The [hardware-layout reproduction module](hardware_layouts/) separately provides the final continuous wiring for the three representative codes. The 122 candidate definitions specify code construction and circuit pairings. Complete geometric layouts are released for these three codes only.
+
+| Code `[[n, k, d]]` | Tiers | Routing faces | Length | TSVs | Bonds | C_hw |
+|---|---:|---:|---:|---:|---:|---:|
+| `[[3636, 1822, 12]]` | 5 | 8 | 7.6116 | 3.4200 | 0.9063 | **1.7753** |
+| `[[4932, 2470, 14]]` | 5 | 8 | 8.5930 | 3.4300 | 1.0096 | **1.8098** |
+| `[[8688, 4348, 16]]` | 6 | 11 | 15.7464 | 4.4255 | 1.2333 | **2.1680** |
+
+Length follows HAL's tier averaging, using **complete continuous arc length divided by the minimum qubit pitch**. It is distinct from HAL's published equal-grid-step estimator and from the mean over all connections. TSVs and Bonds retain HAL's aggregation rules. Bonds is a source-defined segment metric, not a physical bump-bond count.
+
+From a repository checkout, with the base dependencies installed:
+
+```bash
+python hardware_layouts/reproduce.py --out results/layouts
+# Or reproduce one layout
+python hardware_layouts/reproduce.py --code d16 --out results/layout_d16
+```
+
+This reconstructs the complete paths, checks circuit-edge coverage including SWAP-only connections, verifies continuous wire and device clearance, and recalculates the HAL metrics and optimal stacking for the fixed face assignment. The requirements are wire separation greater than `0.1` and nonendpoint-device clearance greater than `0.05`, in units of the minimum qubit pitch. No solver license, Relay-BP installation, network access, or original research directory is needed.
+
+The module is a standalone part of this source repository and is not included in the Python wheel. It reproduces the selected layouts, without rerunning layout searches, distance certification, or QEC sampling. See [layout data and methods](docs/hardware-layouts.md) for coordinates, file formats, numerical checks, and limitations.
+
 ## Project layout
 
 ```text
@@ -114,7 +138,8 @@ src/armillary/
   decoders.py       Relay-BP and MLE reference implementations
   experiments.py    Sampling, handoffs, and independent scoring
   statistics.py     Failure-rate estimates
-docs/               Construction, circuit, decoding, and statistics conventions
+hardware_layouts/   Three final continuous layouts and standalone reproduction
+docs/               Construction, circuit, decoding, statistics, and layout conventions
 examples/           Small runnable examples
 tests/              Construction, mapping, decoding, and accounting checks
 ```

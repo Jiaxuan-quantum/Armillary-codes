@@ -21,3 +21,5 @@ Quantum **5**, 497 (2021), https://doi.org/10.22331/q-2021-07-06-497.
 
 The Armillary construction, circuit adapter, experiment interface, and curated
 candidate data in this repository are project materials covered by its LICENSE.
+
+The standalone hardware-layout module uses the architecture and score conventions of M. Mathews et al., *Placing and routing quantum LDPC codes in multilayer superconducting hardware*, npj Quantum Information **12**, 114 (2026), https://doi.org/10.1038/s41534-026-01243-w. The reference HAL implementation is https://github.com/EQuS/HAL. HAL is not a runtime dependency of the layout verifier, and its router is not vendored here. The continuous-path and layout-verification code is original project code under this repository's MIT license.

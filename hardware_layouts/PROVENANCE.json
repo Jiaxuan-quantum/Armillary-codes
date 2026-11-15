@@ -1,0 +1,126 @@
+{
+  "schema": "armillary-layout-provenance-v1",
+  "date": "2026-11-15",
+  "source_files": {
+    "research/hal_q3_final_20261115/final/common/route_model.py": {
+      "sha256": "8f5465ee3e1cfcd954a23186dd2fc63bf5934244bfebd0bf0939832585dd261a",
+      "transformation": "Verification functions preserved. Removed old workspace-specific CLI defaults and adjusted module documentation."
+    },
+    "research/hal_q3_final_20261115/final/common/continuous_audit.py": {
+      "sha256": "08836c3578be65d9c0fc69bc5f76a9eea8cb7e10383519a88867dc50bd91f437",
+      "transformation": "Verification functions preserved. Removed old workspace-specific CLI defaults and adjusted module documentation."
+    },
+    "research/hal_q3_final_20261115/final/common/audit_replay.py": {
+      "sha256": "c7c3c8e7faa2dbf7ce6c10a8c0faf05d659ecafc27b01fb4118e801214919c13",
+      "transformation": "Verification functions preserved. Removed old workspace-specific CLI defaults and adjusted module documentation."
+    },
+    "research/hal_q3_final_20261115/final/common/native.py": {
+      "sha256": "2bfbeb6ff1d25af9d8a32865fb0b552bf08ead061c82fd07ed7093588b7eb94e",
+      "transformation": "Verification functions preserved. Removed old workspace-specific CLI defaults and adjusted module documentation."
+    },
+    "research/hal_q3_final_20261115/final/common/optimize_stack.py": {
+      "sha256": "742cadcea065b2614c7c435813e890564ce327e6baab6fbb70144ce9d7597cd4",
+      "transformation": "Verification functions preserved. Removed old workspace-specific CLI defaults and adjusted module documentation."
+    },
+    "research/hal_q3_final_20261115/final/codes/d12/geometry.json": {
+      "sha256": "dd009db570496a6705063c1492a2515e8c0473ba845cfa6196446cdc885e2b8f",
+      "transformation": "Retained geometric inputs only, removed search provenance/status, and added explicit schema, code, q, p identity fields."
+    },
+    "research/hal_q3_final_20261115/final/codes/d12/hardware.json": {
+      "sha256": "6309221cbdd13d50c57c19d7c9ac240d65e3783b11c620dcddaec08e605c8477",
+      "transformation": "Final frozen JSON content and numerical values preserved. Line endings normalized to LF for portable Git checkouts."
+    },
+    "research/hal_q3_final_20261115/final/codes/d12/routes.json": {
+      "sha256": "f42b66836337d7362503ef2677c7d8dd2312b806ab944cd8ecc97bcf3e7c9cb6",
+      "transformation": "Final frozen JSON content and numerical values preserved. Line endings normalized to LF for portable Git checkouts."
+    },
+    "research/hal_q3_final_20261115/final/codes/d12/conflict_graph.json": {
+      "sha256": "9ca9a7e5da2c49d034e9822de1653fd6770ea942f79a6573e1b0fa7504b960f9",
+      "transformation": "Kept only graph keys, adjacency pairs, and self-conflicts. Removed timings and old geometry paths."
+    },
+    "research/hal_q3_final_20261115/final/codes/d12/stack.json": {
+      "sha256": "0316f0636c3d37af4af29c49c405274dfb589451d32d5a1d207513666f88909a",
+      "transformation": "Kept the selected minimum-score tier assignment and enumerated partition count. Removed historical alternatives and local paths."
+    },
+    "publication/Armillary-codes/src/armillary/data/candidates/P-2b28b13c8749.json": {
+      "sha256": "a465bc1bcde820ed921f69e59197b1f39fadf3cc17410051b79a4a1cf72f5db2",
+      "transformation": "Existing public candidate JSON content preserved, with no private search metadata. Line endings normalized to LF."
+    },
+    "research/hal_q3_final_20261115/final/codes/d12/code/logical_witness.json": {
+      "sha256": "f977021f6f242683377e1598d6e486221e906978ba5e053e14159e28e54c7d94",
+      "transformation": "Saved logical-witness JSON content preserved. Line endings normalized to LF."
+    },
+    "research/hal_q3_final_20261115/final/codes/d14/geometry.json": {
+      "sha256": "efcf31594fc0bf3dce6ddf06433c7b80672ca70aab28a36e5a4504f997266683",
+      "transformation": "Retained geometric inputs only, removed search provenance/status, and added explicit schema, code, q, p identity fields."
+    },
+    "research/hal_q3_final_20261115/final/codes/d14/hardware.json": {
+      "sha256": "72db662e454bfc12fa669484671565304baee2c706f81f05e2e795543e8840ca",
+      "transformation": "Final frozen JSON content and numerical values preserved. Line endings normalized to LF for portable Git checkouts."
+    },
+    "research/hal_q3_final_20261115/final/codes/d14/routes.json": {
+      "sha256": "f66ac7786395da7976a7a5064e5984d58489430918f1d83a4f81d23783fab941",
+      "transformation": "Final frozen JSON content and numerical values preserved. Line endings normalized to LF for portable Git checkouts."
+    },
+    "research/hal_q3_final_20261115/final/codes/d14/conflict_graph.json": {
+      "sha256": "bdaf2df752ea7d5512644490a465e21ccd44e4fa73395ff2a825546edb8abf4b",
+      "transformation": "Kept only graph keys, adjacency pairs, and self-conflicts. Removed timings and old geometry paths."
+    },
+    "research/hal_q3_final_20261115/final/codes/d14/stack.json": {
+      "sha256": "b2803baf358267816f779144cc50e2b7607b7870ab9d0fbef50fa8ddba906083",
+      "transformation": "Kept the selected minimum-score tier assignment and enumerated partition count. Removed historical alternatives and local paths."
+    },
+    "publication/Armillary-codes/src/armillary/data/candidates/P-54f8f55d9053.json": {
+      "sha256": "7d4e7f0c7dd8018bc2f37d7357a74ec7440ed4435e9a14ef88ffec0f99f219e5",
+      "transformation": "Existing public candidate JSON content preserved, with no private search metadata. Line endings normalized to LF."
+    },
+    "research/hal_q3_final_20261115/final/codes/d14/code/logical_witness.json": {
+      "sha256": "7402c5b814146608d795ad5738fdd9e268b73e36882952cf73490e0b98df0b29",
+      "transformation": "Saved logical-witness JSON content preserved. Line endings normalized to LF."
+    },
+    "research/hal_d16_final_20261115/final/geometry.json": {
+      "sha256": "d471abb5f487b21c1961b7c2bac24e63e78fba1ff9e30564bef6b547b154c82e",
+      "transformation": "Retained geometric inputs only, removed search provenance/status, and added explicit schema, code, q, p identity fields."
+    },
+    "research/hal_d16_final_20261115/final/hardware.json": {
+      "sha256": "0e55c3e8996f71220b64af98e8464189266f4e90c52c3012b7aae785265dd418",
+      "transformation": "Final frozen JSON content and numerical values preserved. Line endings normalized to LF for portable Git checkouts."
+    },
+    "research/hal_d16_final_20261115/final/routes.json": {
+      "sha256": "0d927e76d9007fdf3eee0a568ca8c3d9c24ccce47475bcc27e2647bb4b7fed6c",
+      "transformation": "Final frozen JSON content and numerical values preserved. Line endings normalized to LF for portable Git checkouts."
+    },
+    "research/hal_d16_final_20261115/final/conflict_graph.json": {
+      "sha256": "8f5d506c3095f4dbf8780b8572528181bf048e45d803c97cbd1d029ecd496616",
+      "transformation": "Kept only graph keys, adjacency pairs, and self-conflicts. Removed timings and old geometry paths."
+    },
+    "research/hal_d16_final_20261115/final/stack.json": {
+      "sha256": "39fa31ad64cd94a4e1ba0348cb9ea93bec766e26c40ed9f17942cafd977b1503",
+      "transformation": "Kept the selected minimum-score tier assignment and enumerated partition count. Removed historical alternatives and local paths."
+    },
+    "publication/Armillary-codes/src/armillary/data/candidates/P-0bc3b705dfd0.json": {
+      "sha256": "354ea2a1731e78d8f108543abb6f65e1e152edce7bdee8ed23f9bd811777b8fe",
+      "transformation": "Existing public candidate JSON content preserved, with no private search metadata. Line endings normalized to LF."
+    },
+    "research/hal_d16_final_20261115/final/code/upper.json": {
+      "sha256": "a221c10646187a5521cfe54a5428ba008ab7802589576599fabd30fc260fe0f0",
+      "transformation": "Saved logical-witness JSON content preserved. Line endings normalized to LF."
+    },
+    "research/hal_q3_final_20261115/final/SUMMARY.json": {
+      "sha256": "216e13dd8c4a0403101bc6d4eb4d2ac35a080a21198e8d9f447480f9a86461db",
+      "transformation": "Selected final three-code metrics only. Baseline and search comparisons omitted."
+    },
+    "research/hal_d16_final_20261115/final/SUMMARY.json": {
+      "sha256": "8748aaffaef3f2314690153b025ab8871a65ed11fc1503d08a0e6be60bb3ba0e",
+      "transformation": "Selected final three-code metrics only. Baseline and search comparisons omitted."
+    }
+  },
+  "source_root_note": "Source names identify the original research archive, not paths required for execution. All required inputs are included here.",
+  "hal_reference": {
+    "repository": "https://github.com/EQuS/HAL",
+    "commit": "ad8ac0a39846b978d37b1635b6841f1fea7555c1",
+    "doi": "10.1038/s41534-026-01243-w"
+  },
+  "adaptation_check": "The generic q3 verifier was replayed on the d16 data with explicit q=4,p=181 and code metadata. Coordinates, faces, continuous lengths, circuit pairings, matrix hash, and clearance lower bounds match the frozen d16 result. Only route schema/description strings differ.",
+  "distance_scope": "No new distance search or quantum-error-correction sampling is part of this release."
+}

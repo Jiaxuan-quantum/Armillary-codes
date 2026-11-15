@@ -1,0 +1,322 @@
+{
+  "schema": "armillary-hardware-results-v1",
+  "date": "2026-11-15",
+  "metric_scope": "HAL tier aggregation of continuous complete arc lengths, normalized by minimum physical qubit-center distance a0=1. Published HAL discrete Length is a different estimator.",
+  "requirements": {
+    "wire_separation_strictly_greater_than": 0.1,
+    "nonendpoint_device_region_clearance_strictly_greater_than": 0.05
+  },
+  "codes": {
+    "d12": {
+      "code": [
+        3636,
+        1822,
+        12
+      ],
+      "candidate_id": "P-2b28b13c8749",
+      "matrix_sha256": "2b28b13c874964ed08fd424ac80e36db104499f02a9395e8807669777494ab3e",
+      "metrics": {
+        "tiers": 5,
+        "faces": 8,
+        "Length": 7.611596968054701,
+        "TSVs": 3.42,
+        "Bonds": 0.90625,
+        "C_hw": 1.7752960963348527,
+        "total_edges": 24038,
+        "all_edge_mean": 9.323720847873446,
+        "maximum_length": 18.80019081594398,
+        "TSV_total": 69084,
+        "physical_face_switches": 11918,
+        "full_stack_bonds": 40602,
+        "max_face_endpoint_degree": 4,
+        "tier_records": [
+          {
+            "tier": 0,
+            "faces": [
+              2
+            ],
+            "connections": 3838,
+            "mean_length": 6.573360034116967,
+            "total_length": 25228.55581094092,
+            "TSV_total": 0,
+            "HAL_Bonds": 0.0,
+            "physical_face_switches": 0,
+            "full_stack_bonds": 0
+          },
+          {
+            "tier": 1,
+            "faces": [
+              0,
+              1
+            ],
+            "connections": 9696,
+            "mean_length": 10.24013983265473,
+            "total_length": 99288.39581742026,
+            "TSV_total": 19392,
+            "HAL_Bonds": 0.90625,
+            "physical_face_switches": 5858,
+            "full_stack_bonds": 5858
+          },
+          {
+            "tier": 2,
+            "faces": [
+              4,
+              6
+            ],
+            "connections": 7070,
+            "mean_length": 10.442028395559928,
+            "total_length": 73825.1407566087,
+            "TSV_total": 28280,
+            "HAL_Bonds": 0.9,
+            "physical_face_switches": 4242,
+            "full_stack_bonds": 18382
+          },
+          {
+            "tier": 3,
+            "faces": [
+              7,
+              3
+            ],
+            "connections": 3030,
+            "mean_length": 8.155870867754569,
+            "total_length": 24712.288729296346,
+            "TSV_total": 18180,
+            "HAL_Bonds": 0.9,
+            "physical_face_switches": 1818,
+            "full_stack_bonds": 13938
+          },
+          {
+            "tier": 4,
+            "faces": [
+              5,
+              null
+            ],
+            "connections": 404,
+            "mean_length": 2.64658571018731,
+            "total_length": 1069.2206269156732,
+            "TSV_total": 3232,
+            "HAL_Bonds": 0.0,
+            "physical_face_switches": 0,
+            "full_stack_bonds": 2424
+          }
+        ]
+      },
+      "minimum_wire_clearance_lower_bound": 0.10070884099607542,
+      "minimum_nonendpoint_device_region_clearance_lower_bound": 0.09722845750878055,
+      "stack_partitions_checked": 840,
+      "distance_scope": "The archived exact distance is inherited by matrix identity. Replay verifies the logical witness but does not rerun an exhaustive distance lower-bound proof."
+    },
+    "d14": {
+      "code": [
+        4932,
+        2470,
+        14
+      ],
+      "candidate_id": "P-54f8f55d9053",
+      "matrix_sha256": "54f8f55d90539b64f46a0a5201b5dba0d7e9088cdc5319dbf721c91b15300ff6",
+      "metrics": {
+        "tiers": 5,
+        "faces": 8,
+        "Length": 8.593002953670421,
+        "TSVs": 3.429951690821256,
+        "Bonds": 1.0096153846153846,
+        "C_hw": 1.8098470178199666,
+        "total_edges": 32195,
+        "all_edge_mean": 10.342795058170502,
+        "maximum_length": 19.053891697158218,
+        "TSV_total": 97270,
+        "physical_face_switches": 18358,
+        "full_stack_bonds": 58910,
+        "max_face_endpoint_degree": 4,
+        "tier_records": [
+          {
+            "tier": 0,
+            "faces": [
+              5
+            ],
+            "connections": 3836,
+            "mean_length": 6.363219418434534,
+            "total_length": 24409.309689114874,
+            "TSV_total": 0,
+            "HAL_Bonds": 0.0,
+            "physical_face_switches": 0,
+            "full_stack_bonds": 0
+          },
+          {
+            "tier": 1,
+            "faces": [
+              7,
+              1
+            ],
+            "connections": 14248,
+            "mean_length": 11.25081410517049,
+            "total_length": 160301.59937046914,
+            "TSV_total": 28496,
+            "HAL_Bonds": 1.0096153846153846,
+            "physical_face_switches": 9590,
+            "full_stack_bonds": 9590
+          },
+          {
+            "tier": 2,
+            "faces": [
+              4,
+              2
+            ],
+            "connections": 8631,
+            "mean_length": 10.724168955562012,
+            "total_length": 92560.30225545572,
+            "TSV_total": 34524,
+            "HAL_Bonds": 1.0,
+            "physical_face_switches": 5754,
+            "full_stack_bonds": 23016
+          },
+          {
+            "tier": 3,
+            "faces": [
+              6,
+              0
+            ],
+            "connections": 4795,
+            "mean_length": 11.118177412327933,
+            "total_length": 53311.66069211244,
+            "TSV_total": 28770,
+            "HAL_Bonds": 0.9428571428571428,
+            "physical_face_switches": 3014,
+            "full_stack_bonds": 22194
+          },
+          {
+            "tier": 4,
+            "faces": [
+              3,
+              null
+            ],
+            "connections": 685,
+            "mean_length": 3.50863487685714,
+            "total_length": 2403.414890647141,
+            "TSV_total": 5480,
+            "HAL_Bonds": 0.0,
+            "physical_face_switches": 0,
+            "full_stack_bonds": 4110
+          }
+        ]
+      },
+      "minimum_wire_clearance_lower_bound": 0.10053975277416435,
+      "minimum_nonendpoint_device_region_clearance_lower_bound": 0.09991642026006729,
+      "stack_partitions_checked": 840,
+      "distance_scope": "The archived exact distance is inherited by matrix identity. Replay verifies the logical witness but does not rerun an exhaustive distance lower-bound proof."
+    },
+    "d16": {
+      "code": [
+        8688,
+        4348,
+        16
+      ],
+      "candidate_id": "P-0bc3b705dfd0",
+      "matrix_sha256": "0bc3b705dfd0c35cea47e1591471e95d92637868af505645216cd7fbd5da0cdc",
+      "metrics": {
+        "tiers": 6,
+        "faces": 11,
+        "Length": 15.746365176260698,
+        "TSVs": 4.425531914893617,
+        "Bonds": 1.2333333333333334,
+        "C_hw": 2.1679989144705987,
+        "total_edges": 66065,
+        "all_edge_mean": 18.894738104772355,
+        "maximum_length": 48.48107240759143,
+        "TSV_total": 263536,
+        "physical_face_switches": 48146,
+        "full_stack_bonds": 192584,
+        "max_face_endpoint_degree": 4,
+        "tier_records": [
+          {
+            "tier": 0,
+            "faces": [
+              1
+            ],
+            "connections": 6516,
+            "mean_length": 8.635247550751574,
+            "total_length": 56267.273040697255,
+            "TSV_total": 0,
+            "HAL_Bonds": 0.0,
+            "physical_face_switches": 0,
+            "full_stack_bonds": 0
+          },
+          {
+            "tier": 1,
+            "faces": [
+              7,
+              0
+            ],
+            "connections": 21177,
+            "mean_length": 22.717729855622736,
+            "total_length": 481093.3651525227,
+            "TSV_total": 42354,
+            "HAL_Bonds": 1.2307692307692308,
+            "physical_face_switches": 17376,
+            "full_stack_bonds": 17376
+          },
+          {
+            "tier": 2,
+            "faces": [
+              8,
+              10
+            ],
+            "connections": 16290,
+            "mean_length": 19.958126301698993,
+            "total_length": 325117.8774546766,
+            "TSV_total": 65160,
+            "HAL_Bonds": 1.2333333333333334,
+            "physical_face_switches": 13394,
+            "full_stack_bonds": 45974
+          },
+          {
+            "tier": 3,
+            "faces": [
+              3,
+              6
+            ],
+            "connections": 12127,
+            "mean_length": 18.750993990472143,
+            "total_length": 227393.30412245568,
+            "TSV_total": 72762,
+            "HAL_Bonds": 1.164179104477612,
+            "physical_face_switches": 9412,
+            "full_stack_bonds": 57920
+          },
+          {
+            "tier": 4,
+            "faces": [
+              5,
+              4
+            ],
+            "connections": 8145,
+            "mean_length": 18.02934872006462,
+            "total_length": 146849.04532492632,
+            "TSV_total": 65160,
+            "HAL_Bonds": 1.2,
+            "physical_face_switches": 6516,
+            "full_stack_bonds": 55386
+          },
+          {
+            "tier": 5,
+            "faces": [
+              2,
+              9
+            ],
+            "connections": 1810,
+            "mean_length": 6.386744638954121,
+            "total_length": 11560.00779650696,
+            "TSV_total": 18100,
+            "HAL_Bonds": 1.2,
+            "physical_face_switches": 1448,
+            "full_stack_bonds": 15928
+          }
+        ]
+      },
+      "minimum_wire_clearance_lower_bound": 0.10009775936336379,
+      "minimum_nonendpoint_device_region_clearance_lower_bound": 0.0653023597415427,
+      "stack_partitions_checked": 10395,
+      "distance_scope": "The archived exact distance is inherited by matrix identity. Replay verifies the logical witness but does not rerun an exhaustive distance lower-bound proof."
+    }
+  }
+}
