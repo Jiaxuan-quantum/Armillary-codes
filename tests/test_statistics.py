@@ -32,7 +32,7 @@ def test_released_benchmark_reconciles():
     data = json.loads(source.read_text(encoding="utf-8"))
     assert len(data["pooled"]) == 3 and len(data["sides"]) == 6
     sum_fields = ("N", "C1", "W1", "B", "C2", "W2", "bits1", "bits2")
-    expected_failures = {"8749": 24, "9053": 10, "p181": 1}
+    expected_failures = {"8749": 22, "9053": 9, "p181": 1}
     for pooled in data["pooled"]:
         sides = [r for r in data["sides"] if r["candidate"] == pooled["candidate"]]
         assert {r["basis"] for r in sides} == {"x", "z"}

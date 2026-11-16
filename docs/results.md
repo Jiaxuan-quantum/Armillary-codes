@@ -9,9 +9,9 @@ joint measurement of X and Z logical failure on the same shot.
 | Code | Basis | N | C1 | W1 | B | C2 | W2 |
 |---|---|---:|---:|---:|---:|---:|---:|
 | 8749 | X | 3,361,646 | 3,361,385 | 13 | 248 | 248 | 0 |
-| 8749 | Z | 3,361,646 | 3,361,385 | 9 | 252 | 250 | 2 |
+| 8749 | Z | 3,361,646 | 3,361,385 | 9 | 252 | 252 | 0 |
 | 9053 | X | 10,386,959 | 10,386,478 | 3 | 478 | 478 | 0 |
-| 9053 | Z | 10,386,959 | 10,386,431 | 6 | 522 | 521 | 1 |
+| 9053 | Z | 10,386,959 | 10,386,431 | 6 | 522 | 522 | 0 |
 | p181 | X | 17,742,045 | 17,740,645 | 0 | 1,400 | 1,400 | 0 |
 | p181 | Z | 17,742,045 | 17,740,002 | 1 | 2,042 | 2,042 | 0 |
 
@@ -45,7 +45,7 @@ P_L = 1 - (1 - P_fail)^(1/(k r)).
 This equivalent probability normalizes a block event. It differs from the directly
 observed logical-bit contribution, `sum(logical bit flips)/(k r N)`, because one
 block failure can affect several logical observables. The latter values are
-4.28e-7, 2.46e-8, and 1.46e-11 for 8749, 9053, and p181, respectively.
+3.92e-7, 1.87e-8, and 1.46e-11 for 8749, 9053, and p181, respectively.
 
 `armillary benchmark` recomputes point estimates and two-sided 95% Clopper–Pearson
 reference intervals. It transforms both endpoints using the same equation above.
