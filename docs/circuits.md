@@ -27,6 +27,21 @@ They use four noisy rounds and `p = 0.001`. A circuit hash is computed from
 `str(circuit).encode("utf-8")`; file checksums are recorded separately because
 the saved `.stim` file includes a final newline.
 
+## Deleted-check routing
+
+At deleted-check locations, the simulator applies SWAP followed by
+`DEPOLARIZE2(p)`. The manuscript's zero-state explanation is an ideal-gate
+identity: if the routing ancilla is the CX control and enters in an error-free
+`|0>` state, CX acts trivially on any data state. Thus CXSWAP and SWAP give the
+same output after the same post-gate depolarizing channel. The marginal channel
+on the transported data is `DEPOLARIZE1(4p/5)` in Stim's convention.
+
+This identity assumes the zero-state condition at each interaction. A preparation
+error or an error carried by a reused ancilla can propagate through a subsequent
+CX, so equal post-gate depolarizing channels alone do not make the full noisy
+implementations equivalent. The reported simulations use the SWAP-only primitive
+at deleted-check locations, with the preparation and gate noise specified above.
+
 ## Detector-error representation
 
 Stim converts the circuit to a detector error model without graphlike

@@ -87,13 +87,13 @@ The front decoder first runs a short Relay-BP configuration. It accepts the firs
 
 The released aggregate data at physical error probability `p = 0.001` are:
 
-| Code | Completed X/Z samples | Final block failures | Equivalent probability per logical qubit per round |
+| Code | Completed X/Z samples | Final block failures | Logical error rate per logical qubit per round |
 |---|---:|---:|---:|
 | `8749` | 6,723,292 | 22 | 4.49 × 10⁻¹⁰ |
 | `9053` | 20,773,918 | 9 | 4.38 × 10⁻¹¹ |
 | `p181` | 35,484,090 | 1 | 1.62 × 10⁻¹² |
 
-These values use `P_L = 1 - (1 - F/N)^(1/(k r))`, with `r = 4`. This is a block-normalized reporting convention, not the directly measured average number of logical-bit flips. The distance-16 estimate is based on one failure and does not establish a probability below 10⁻¹². [Statistics and scope](docs/results.md) gives the counts for each memory basis, uncertainty interpretation, and the distinction between a numerical MLE correction and a certified global optimum.
+We report `P_L = 1 - (1 - F/N)^(1/(k r))`, with `r = 4`. The distance-16 estimate is based on one failure and does not establish a probability below 10⁻¹². See [benchmark statistics](docs/results.md) for per-basis counts and uncertainty.
 
 ```bash
 armillary benchmark

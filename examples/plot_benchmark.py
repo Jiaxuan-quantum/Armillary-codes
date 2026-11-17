@@ -21,7 +21,7 @@ for row, color in zip(data["pooled"], ("#4B6B9C", "#B16F49", "#537D68")):
     ax.errorbar(row["d"], value, yerr=np.array([[value - lo], [hi - value]]),
                 fmt="o", color=color, capsize=3, markersize=6)
 ax.set(yscale="log", xticks=[12, 14, 16], xlabel="Code distance",
-       ylabel=r"Equivalent rate $P_{\mathrm{L}}$")
+       ylabel=r"Logical error rate $P_{\mathrm{L}}$")
 ax.set_title(r"$p_{\mathrm{phy}}=0.1\%$", fontsize=10)
 ax.grid(axis="y", alpha=.2)
 args.out.parent.mkdir(parents=True, exist_ok=True)

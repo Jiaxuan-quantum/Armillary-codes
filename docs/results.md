@@ -30,22 +30,18 @@ The p181 population combines several sampling batches. Equal X/Z exposure exclud
 192 completed but unpaired samples, all correctly decoded by Relay. Another 192
 samples without a completed first-stage result are excluded. Neither exclusion
 changes the failure or handoff counts. All 4,942 included handoffs have a scored
-final correction. The MLE columns group outcomes by correctness; numerical global
-optimality was not certified for every historical correction.
+final correction. The MLE columns count returned corrections by logical
+correctness, irrespective of solver optimality status.
 
 ## Reported probabilities
 
 The empirical block failure probability is `P_fail = F/N`. For a code with `k`
-logical qubits and `r` noisy rounds, the manuscript reports
+logical qubits and `r` noisy rounds, we report the logical error rate per logical
+qubit per round as
 
 ```text
 P_L = 1 - (1 - P_fail)^(1/(k r)).
 ```
-
-This equivalent probability normalizes a block event. It differs from the directly
-observed logical-bit contribution, `sum(logical bit flips)/(k r N)`, because one
-block failure can affect several logical observables. The latter values are
-3.92e-7, 1.87e-8, and 1.46e-11 for 8749, 9053, and p181, respectively.
 
 `armillary benchmark` recomputes point estimates and two-sided 95% Clopper–Pearson
 reference intervals. It transforms both endpoints using the same equation above.
