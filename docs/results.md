@@ -33,6 +33,15 @@ changes the failure or handoff counts. All 4,942 included handoffs have a scored
 final correction. The MLE columns count returned corrections by logical
 correctness, irrespective of solver optimality status.
 
+## Follow-up archived on 18 November 2026
+
+Further optimization of the three historically incorrect MLE outputs confirms
+correct logical action for all three saved corrections. Two now have verified
+numerical-optimality certificates; the remaining correction is feasible and
+logically correct. The aggregate counts above are unchanged, since they already
+include these corrected outputs. The compact [follow-up record](../src/armillary/data/mle_followup_20261118.json)
+binds the outcomes to correction hashes and records the final solver bounds.
+
 ## Reported probabilities
 
 The empirical block failure probability is `P_fail = F/N`. For a code with `k`
